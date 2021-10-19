@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About us</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-image: url(circle.gif);
+  background-size: cover;
+  padding: 1px;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1000px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-image: url(yellowbg.jpg);
+  background-size: cover;
+  height: 1000px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  font-family: Outrun Future;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(5, 3, 3);
+  background-color: #f4f806;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #f4f806}
+
+.button:active {
+  background-color: #f4f806;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.logolayout{
+  height: 300px;
+  width: 500px;
+}
+
+
+
+.History{
+    font-size: 58px;
+}
+
+
+
+</style>
+</head>
+<body>
+<!--isi sendiri diatas H2&P jika ingin menambahkan-->
+
+<!--sampai ini-->
+
+<header>
+  <h2><img class="logolayout" src="logocyberpunk.png" alt="cyberpunk"></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <button class="button"onclick="document.location='layouthome.html'">Home</button> <br><br><br>
+        <button class="button"onclick="document.location='JoinUs.html'">Join Us</button> <br><br><br>
+        <button class="button"onclick="document.location='AboutUs.html'">About Us</button><br><br><br>
+        <button class="button"onclick="document.location='ujianlanding.html'">going Back</button>
+        
+    </ul>
+  </nav>
+  
+  <article>
+    <center><b><h1 class="History"> Our History </h1></b></center>
+    <br>
+    <br>
+    <p style="text-align: justify;">Established in 2002, located in Warsaw (HQ), Kraków and Wrocław, Poland,
+        CD PROJEKT RED was born out of raw passion for video games.</p>
+    <p style="text-align: justify;">The studio’s founders: Michał Kiciński and Marcin Iwiński, both pioneers in video game distribution in Poland in the 90s,
+         decided to employ their gaming industry experience in video game development. In 2007, The Witcher was born.</p>
+    <p style="text-align: justify;">After the success of the first installment of the game, the studio set sail for bigger leagues and began working on a sequel.
+         Hitting PC in 2011 and Xbox 360 a year later, The Witcher 2: Assassins of Kings became one of the most critically acclaimed role-playing games in the genre’s contemporary history. 
+         What started out as a small, skeleton-crew studio is now a premiere RPG developer, employing over 800 people from all around the world
+        and setting standards for the whole industry in terms of quality of games and the approach to gamers. <br><br>
+
+        What’s most important, we’re still driven by what made us succeed: we take our passion for games and harness it to make the best video games in the world.</p>
+        <br>
+         
+
+    
+
+  </article>
+</section>
+
+<footer>
+  <p style="text-align: right;">PojeReserved!</p>
+</footer>
+
+</body>
+</html>
